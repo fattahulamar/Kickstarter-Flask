@@ -1,0 +1,35 @@
+{% extends 'index.html' %} {% block content %}
+<center>
+    <div class="p1">
+        <b>Kickstarter Prediction</b>
+    </div>
+    <br>
+    <div class="container">
+
+        <b>Name: </b> {{name}}<br>
+        <b>Desc: </b> {{desc}}<br>
+        <b>Backers_count: </b> {{backers_count}}<br>
+        <b>Deadline: </b> {{Launched_Deadline}}<br>
+        <b>goal_usd: </b>{{goal_usd}}<br>
+        <b>main_category: </b>{{main_category}}<br>
+        <b>Country: </b> {{country}}<br>
+        <b>currency: </b>{{currency}}<br>
+        <b>Month: </b> {{Month}}<br>
+        <b>final_status: </b> {{ks_pred}}<br>
+
+        
+    </div>
+    <hr>
+    <a href="/predict" target="_self">
+        <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+            Predict Again
+        </button>
+    </a>
+    <a href="/" target="_self">
+        <button style="background-color: rgb(255, 90, 95); color: whitesmoke" class="btn btn-light">
+            Back to Home
+        </button>
+    </a>
+</center>
+
+{% endblock %}
